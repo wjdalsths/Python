@@ -1,0 +1,17 @@
+#문자열 처리함수
+python = "Python is Amazing"
+print(python.lower())#소문자로(전부)
+print(python.upper())#대문자로(전부)
+print(python[0].isupper())#대문자가 있는지
+print(len(python))#문자열길이
+print(python.replace("Python","Java"))#문자열 바꾸기
+
+index=python.index("n")#n 찾기
+print(index)
+index=python.index("n",index+1)#index+1부터 찾기
+print(index)
+
+print(python.find("n"))#찾기
+print(python.find("Java"))#값없으면 -1출려
+#print(python.index("Java"))#오류
+print(python.count("n"))#n 개수
