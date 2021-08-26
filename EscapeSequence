@@ -1,0 +1,10 @@
+#탈출문자
+# \n, \", #',\\
+print("he\nllo")
+print('he"llo"')
+print("he\"llo\"")
+print("\\")
+# \r커서를 앞으로(덮어씌워짐), \b 한칸지우기, \t 탭
+print("Red Apple\rPine")
+print("redd\b")
+print("red\tapple")
