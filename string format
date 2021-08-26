@@ -1,0 +1,12 @@
+#문자열포맷
+print("a"+"b")
+print("a","b")
+print("나는 %d살."%20)
+print("나는%s을 함"%"python")
+print("Apple은 %c로 시작"%"A")
+print("나는 %s살."%20)
+print("%s %s"%("Java","Python"))
+print("나는{}살".format(20))
+print("{} {}".format("Java","Python"))
+print("{1} {0}".format("Java","Python"))
+print("나는{age}살, {color}색".format(color="파랑",age=20))#age,color 변수로 만들고넣어도됨
