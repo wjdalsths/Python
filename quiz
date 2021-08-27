@@ -1,0 +1,6 @@
+url="http://naver.com"
+site=url[7:]
+site=site[:site.index(".")]
+print(site)
+PW=site[:3]+str(len(site))+str(site.count("e"))+"!"
+print("{0} 의 비밀번호는 {1}입니다".format("사용자",PW))
