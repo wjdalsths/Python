@@ -1,0 +1,15 @@
+#리스트
+subway= [10,20,30]
+print(subway)
+subway=["유","조","박"]
+print(subway)
+print(subway.index("조"))
+subway.append("하")#추가하기
+print(subway)
+subway.insert(1,"정")#끼워넣기
+print(subway)
+print(subway.pop())#뒤에하나 빼기
+print(subway)
+subway.append("유")
+print(subway)
+print(subway.count("유"))
