@@ -13,3 +13,12 @@ print(subway)
 subway.append("유")
 print(subway)
 print(subway.count("유"))
+
+#정렬
+list=[5,2,3,4,1]
+list.sort()#오름차순
+print(list)
+list.reverse()#내림차순
+print(list)
+#list.clear()#다 지우기
+print(list)
