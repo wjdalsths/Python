@@ -11,3 +11,23 @@ print(cabinet.get(5,"사용가능"))
 print(3in cabinet)#값 확인
 cabinet1={"A3":"유","B100":"김"}
 print(cabinet1["A3"])
+
+#추가
+print(cabinet1)
+cabinet1["A3"]="종"
+cabinet1["C20"]="조"
+print(cabinet1)
+#삭제
+del cabinet1["A3"]
+print(cabinet1)
+
+#키만 출력
+print(cabinet1.keys())
+#value 출력
+print(cabinet1.values())
+#둘다 출력
+print(cabinet1.items())
+
+#전부 삭제
+cabinet1.clear()
+print(cabinet1)
