@@ -1,0 +1,13 @@
+#사전
+cabinet={3:"유",100:"김"}
+print(cabinet[3])
+print(cabinet[100])
+
+print(cabinet.get(3))
+#print(cabinet[5])#키에러 후 종료
+print(cabinet.get(5))#none출력
+print(cabinet.get(5,"사용가능"))
+
+print(3in cabinet)#값 확인
+cabinet1={"A3":"유","B100":"김"}
+print(cabinet1["A3"])
