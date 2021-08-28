@@ -22,3 +22,10 @@ list.reverse()#내림차순
 print(list)
 #list.clear()#다 지우기
 print(list)
+
+mixlist=["조",20,True]
+print(mixlist)
+
+#리스트 확장
+list.extend(mixlist)
+print(list)
