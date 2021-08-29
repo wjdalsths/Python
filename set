@@ -4,3 +4,19 @@ set={1,2,3,3,3}
 print(set)
 java={"유","김","양"}
 python={"유","박"}
+
+#교집합 출력
+print(java & python)
+print(java.intersection(python))
+
+#합집합 출력
+print(java | python)
+print(java.union(python))
+
+#차집합 출력
+print(java - python)
+print(java.difference(python))
+
+python.add("김")#추가
+print(python)
+java.remove("김")#삭제
