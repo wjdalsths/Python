@@ -1,0 +1,15 @@
+#퀴즈
+# list=[1,2,3,4,5]
+# print(list)
+# shuffle(list)
+# print(list)
+# print(sample(list,1))
+
+from random import *
+det = range(1,21)
+det=list(det)
+shuffle(det)
+ch=sample(det,4)
+print("당첨자")
+print("치킨 당첨:{}".format(ch[0]))
+print("커피 당첨:{}".format(ch[1:]))
