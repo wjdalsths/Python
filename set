@@ -20,3 +20,4 @@ print(java.difference(python))
 python.add("김")#추가
 print(python)
 java.remove("김")#삭제
+print(java)
