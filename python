@@ -48,3 +48,88 @@ for i in range(1, 10):
     if i==7:
         break;
     print(i, end=' ')
+
+i=1
+while i<11:
+    if i%2==0:
+        print(i)
+        i+=1
+    else:
+        i+=1
+        continue
+        
+i=0
+while i<20:
+    if i%2==1:
+        print(i)
+        i+=1
+    else:
+        i+=1
+        continue
+        
+a=[1,2]
+a.append(100)
+a
+
+a=[1,2]
+b=[3,4]
+a.extend(b)
+a
+
+a=[1,2,3,4]
+a.insert(3,100)
+a
+
+a.insert(len(a),1000)
+a
+
+a=[1,2,3]
+a.remove(2)
+a
+
+a=[1,2,3]
+a.index(3)
+
+a=[1,2,3,3,3,1]
+a.count(1)
+
+a=[1,2,3,4,5]
+a.reverse()
+a
+
+list(reversed(a))
+
+a=[1,2,3]
+a.clear()
+a
+
+a=[1,2,3]
+b=a
+b
+
+a=[0,0,0,0]
+b=a.copy()
+b[0]=99
+b[1]=100
+b
+
+a is b
+
+a=[10,20,30]
+b=[1,2,3]
+a+b
+a*2
+
+a=[10,3,4,5,6,7,8]
+for n in a:
+    print(n)
+    
+for c in "abcdefg":
+print(c)
+
+a=[1,2,3,4,5]
+i=0
+while i<len(a):
+    print(i,a[i])
+    i+=1
+    
