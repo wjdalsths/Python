@@ -133,3 +133,42 @@ while i<len(a):
     print(i,a[i])
     i+=1
     
+a = [38, 83, 21, 55, 89, 72]
+smallest=1000
+for n in a:
+    if n <smallest:
+        smallest =n
+smallest
+
+a = [38, 83, 21, 55, 89, 72]
+big=0
+for n in a:
+    if n > big:
+        big =n
+big
+
+a = [38, 83, 21, 55, 89, 72]
+total=0
+for n in a:
+    total +=n
+print("합계=",total)
+print("평균=",(total/len(a)))
+
+max()
+min()
+sum()
+
+aa=[]
+for i in range(10,101,10):
+    aa.append(i)
+aa
+
+[i for i in range(10,101,10)]
+
+['a' for _ in range(10)]
+
+[(i+1)*10 for i  in range(10)]
+
+b= list(i for i in range(10))
+b
+
