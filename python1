@@ -1,0 +1,16 @@
+a = []   # 빈 리스트 생성
+
+for i in range(3):
+    line = []
+    for j in range(2):
+        line.append(0)
+    a.append(line)
+    
+print(a)
+
+#문자열 일부 가져오기
+s = 'abcdefghijklmn'
+s[0:len(s)]
+
+#음수 인덱싱
+s[-3:]
