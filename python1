@@ -14,3 +14,38 @@ s[0:len(s)]
 
 #음수 인덱싱
 s[-3:]
+s[3:-1
+s[-10:12]
+
+#문자열 메서드
+s='hello, world!'
+s.replace('world','소마고')
+
+#split
+s='i am boy. iam a studeny'
+s2 = s.split()
+
+x=input("문자 3개").split()
+e, f, g=input("문자 3").split()
+
+#대문자
+s4='python'
+s4.upper()
+#소문자
+s4='PYHTON'
+s4.lower()
+
+#공백 없애기
+s='   asd'
+s.rstrip()
+
+s='asd   '
+s.lstrip()
+
+s='    as d   '
+s.strip()
+
+#연습문제
+path = 'C:\\Users\\dojange\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe'
+path
+path.split('\\')#[-2]
