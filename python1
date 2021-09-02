@@ -49,3 +49,4 @@ s.strip()
 path = 'C:\\Users\\dojange\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe'
 path
 path.split('\\')#[-2]
+ 
