@@ -13,3 +13,10 @@ data = {
     "2010-2015 증가율": [0.0283, 0.0163, 0.0982, 0.0141]
 }
 type(data)
+
+columns = ["지역", "2015", "2010", "2005", "2000", "2010-2015 증가율"]
+index = ["서울", "부산", "인천", "대구"]
+
+# Data Frame 만들기
+df=pd.DataFrame(data,index=index,columns=columns)
+df
