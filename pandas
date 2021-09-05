@@ -20,3 +20,15 @@ index = ["서울", "부산", "인천", "대구"]
 # Data Frame 만들기
 df=pd.DataFrame(data,index=index,columns=columns)
 df
+
+### 값(value) 보기 
+df.values
+
+### 자료형
+type(df.values)
+
+## 컬럼 인덱스
+df.columns
+
+## 행 인덱스
+df.index
