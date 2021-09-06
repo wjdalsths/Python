@@ -1,0 +1,70 @@
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+plt.title("Plot")
+plt.plot([1, 4, 9, 16])
+plt.show()  # 주피터 노트북에서... 셀이 끝날 때에는 그래프를 그려줌
+
+plt.title("제목")
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16])  # x좌표, y좌표 모두 지정
+plt.show()
+
+set(sorted([f.name for f in mpl.font_manager.fontManager.ttflist]))
+
+import matplotlib.font_manager as fm
+
+font_list = fm.findSystemFonts(fontpaths = None, fontext = 'ttf')
+
+font_list[:]
+
+# 폰트 설정
+mpl.rc('font', family='NanumGothic')
+# mpl.rc('font', family='AppleGothic')   # Mac OS의 경우
+# 유니코드에서  음수 부호설정
+mpl.rc('axes', unicode_minus=False)
+
+plt.title('한글 제목')
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16])
+plt.xlabel("엑스축 라벨")
+plt.ylabel("와이축 라벨")
+plt.show()
+
+font1 = {'family': 'HYwulM', 'size': 24, 
+         'color':  'black'}
+font2 = {'family': 'Gulim', 'size': 18, 'weight': 'bold',
+         'color':  'darkred'}
+font3 = {'family': 'Batang', 'size': 24, 'weight': 'light',
+         'color':  'blue'}
+
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16])
+plt.title('한글 제목', fontdict=font1)
+plt.xlabel('엑스 축', fontdict=font2)
+plt.ylabel('와이 축', fontdict=font3)
+plt.show()
+
+plt.title("타이틀")
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16], 'rs--')  # red, square, --
+
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16], c='b', lw=1, ls=':',
+        marker='o', ms=15, mec='g', mew=3, mfc='r')
+## c:color(line), lw(lineWidth), marker:마커모양, ms(MarkerSize)
+## mec(MarkerEdgeColor):마커선 색깔, mew(MarkerEdge Width), mfc(MarkerFaceColor)
+
+plt.title('x축, y축의 범위 설정')
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16], c='b', lw=3, ls='--',
+        marker='o', ms=15, mec='g', mew=5, mfc='r')
+plt.xlim(0, 50)
+plt.ylim(-10, 30)
+plt.show()
+# color=blue, line width=5, lineSty='--', marker="o", markerSize=15
+# mec:markerEdgeColor, MarkerEdgeColor='green', MarkerEdge=마커 선 굵기, MarkerFaceColor
+
+import numpy as np
+X = np.linspace(-np.pi, np.pi, 100)  # -pi ~ pi 까지 100개 구간
+Y = np.cos(X)
+## x축, y축 눈금
+plt.xticks([-np.pi, -np.pi/2, 0, np.pi/2, np.pi])
+plt.yticks([-1, 0, 1])
+
+plt.plot(X, Y)
+plt.show()
