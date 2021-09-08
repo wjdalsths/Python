@@ -116,3 +116,87 @@ plt.xlabel("시간")
 plt.ylabel("진폭")
 plt.legend(loc=10)
 plt.show()
+
+
+
+np.random.seed(2)
+f1 = plt.figure(figsize=(10, 2))   ## 캔버스 사이즈 
+plt.title("figure size : (10, 2)")
+plt.plot(np.random.randn(100)) # 랜덤 그래픽
+plt.show()
+
+f1 = plt.figure()
+plt.title("현재의 figure 객체")
+plt.plot([1, 2, 3, 4])
+
+f2 = plt.gcf()  # get current figure (현재 figure 가져오기)
+print(f1, id(f1))
+print(f2, id(f2))
+plt.show()
+
+## subplots 로 복수의 Axes 만들기
+fig, axes = plt.subplots(2, 2, figsize=(10, 6))
+print("fig=", fig)
+print("axes=", axes)
+
+# Axes는 2x2의 ndarray 형태의 구성이 됨
+np.random.seed(15)
+axes[0, 0].plot(np.random.rand(5))
+axes[0, 0].set_title("axes 1")
+axes[0, 1].plot(np.random.rand(5))
+axes[0, 1].set_title("axes 2")
+axes[1, 0].plot(np.random.rand(5))
+axes[1, 0].set_title("axes 3")
+axes[1, 1].plot(np.random.rand(5))
+axes[1, 1].set_title("axes 4")
+
+plt.tight_layout()
+plt.show()
+
+
+
+np.random.seed(100)
+
+# plt.subplot(2, 2, 1)
+plt.subplot(221)  ## 위와 동일!
+plt.plot(np.random.rand(5))  # 0~ 1 random 5개
+plt.title("axes 1")
+
+plt.subplot(222)  
+plt.plot(np.random.rand(5))  # 0~ 1 random 5개
+plt.title("axes 2")
+
+plt.subplot(223)  
+plt.plot(np.random.rand(5))  # 0~ 1 random 5개
+plt.title("axes 3")
+
+plt.subplot(224)  
+plt.plot(np.random.rand(5))  # 0~ 1 random 5개
+plt.title("axes 4")
+
+plt.tight_layout()
+plt.show()
+
+
+
+
+
+fig, ax0 = plt.subplots()
+
+# x축을 공유하는 새로운 Axes
+ax1 = ax0.twinx()  
+
+# 그래프 1 그리기
+ax0.set_title("2개의 y축 한 figure에서 사용하기")
+ax0.plot([10, 5, 2, 9, 7], 'r', label="y0")
+ax0.set_ylabel("y0")
+ax0.grid(True)
+
+# 그래프 2 그리기
+ax1.plot([100, 200, 220, 180, 120], 'g:', label='y1')
+ax1.set_ylabel("y1")
+ax1.grid(True)
+
+ax0.set_xlabel("공유되는 x축")
+
+plt.show()
